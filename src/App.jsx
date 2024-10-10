@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import StoreFront from './StoreFront';
 
 export default function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -6,7 +7,7 @@ export default function App() {
   if (loggedIn) {
     return (
       <>
-        {/* <StoreFront /> */}
+        <StoreFront />
         <button className="btn btn-outline" onClick={() => setLoggedIn(false)}>
           Logout
         </button>
